@@ -1,23 +1,45 @@
-# Expense Tracker CLI
+# Expense Tracker (Python + SQLite + Tkinter)
 
-A simple command-line expense tracker built in Python to record, view, and manage personal expenses.  
-The focus of this project is clean object-oriented design, persistence using JSON, and practical CLI usage.
+A desktop-based expense tracking application built using **Python**, **SQLite**, and **Tkinter**.  
+The application allows users to record daily expenses, persist data using a relational database, and view spending insights through a simple graphical interface.
 
-## Features
+---
+
+## ✨ Features
+
 - Add expenses with date, description, amount, and category
+- Persistent storage using **SQLite**
 - View all recorded expenses
-- Remove expenses by index
-- Calculate total expenses
-- Persist data automatically using a JSON file
-- Simple and intuitive CLI interface using `argparse`
+- Category-wise expense summary using SQL aggregation
+- Input validation for numeric fields
+- Clean separation between:
+  - UI (Tkinter)
+  - Backend logic
+  - Database layer
 
-## Tech Stack
-- Python
-- argparse
-- JSON (for persistence)
+---
 
-## Usage
+## 🛠 Tech Stack
 
-### Add an expense
-```bash
-python expense_tracker.py add --date 2025-01-10 --desc "Groceries" --amount 450 --category Food
+- **Python**
+- **SQLite**
+- **Tkinter (GUI)**
+- **SQL (CRUD operations, GROUP BY, aggregation)**
+
+---
+
+
+---
+
+## ▶️ How to Run
+
+1. Clone the repository
+   ```bash
+   git clone <repo-url>
+   cd expense-tracker
+
+2. Run the GUI application
+
+    python gui.py
+
+
